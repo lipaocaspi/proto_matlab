@@ -1,0 +1,42 @@
+% INDEX FILES
+filenameC = 'data/index/indexcobre.txt';
+filenameO = 'data/index/indexoro.txt';
+filenameP = 'data/index/indexplata.txt';
+delimiterIn = ' ';
+headerlinesIn = 1;
+cobre = importdata(filenameC, delimiterIn, headerlinesIn);
+oro = importdata(filenameO, delimiterIn, headerlinesIn);
+plata = importdata(filenameP, delimiterIn, headerlinesIn);
+waveC = cobre.data(:, 1);
+waveO = oro.data(:, 1);
+waveP = plata.data(:, 1);
+nC = cobre.data(:, 2);
+nO = oro.data(:, 2);
+nP = plata.data(:, 2);
+kC = cobre.data(:, 3);
+kO = oro.data(:, 3);
+kP = plata.data(:, 3);
+% GENERAL
+delimiterComma = ',';
+headerlinesIn = 1;
+% ORO FILES
+filenameOro10 = 'data/Oro/comsol_oro_10_nm.txt';
+filenameOro20 = 'data/Oro/comsol_oro_20_nm.txt';
+filenameOro30 = 'data/Oro/comsol_oro_30_nm.txt';
+filenameOro40 = 'data/Oro/comsol_oro_40_nm.txt';
+filenameOro50 = 'data/Oro/comsol_oro_50_nm.txt';
+filenameOro60 = 'data/Oro/comsol_oro_60_nm.txt';
+filenameOro70 = 'data/Oro/comsol_oro_70_nm.txt';
+filenameOro80 = 'data/Oro/comsol_oro_80_nm.txt';
+filenameOro90 = 'data/Oro/comsol_oro_90_nm.txt';
+filenameOro100 = 'data/Oro/comsol_oro_100_nm.txt';
+Oro10 = importdata(filenameOro10, delimiterComma, headerlinesIn); waveOro10  = Oro10.data(:, 1);
+Oro20 = importdata(filenameOro20, delimiterComma, headerlinesIn); waveOro20  = Oro20.data(:, 1);
+Oro30 = importdata(filenameOro30, delimiterComma, headerlinesIn); waveOro30  = Oro30.data(:, 1);
+Oro40 = importdata(filenameOro40, delimiterComma, headerlinesIn); waveOro40  = Oro40.data(:, 1);
+Oro50 = importdata(filenameOro50, delimiterComma, headerlinesIn); waveOro50  = Oro50.data(:, 1);
+Oro60 = importdata(filenameOro60, delimiterComma, headerlinesIn); waveOro60  = Oro60.data(:, 1);
+Oro70 = importdata(filenameOro70, delimiterComma, headerlinesIn); waveOro70  = Oro70.data(:, 1);
+Oro80 = importdata(filenameOro80, delimiterComma, headerlinesIn); waveOro80  = Oro80.data(:, 1);
+Oro90 = importdata(filenameOro90, delimiterComma, headerlinesIn); waveOro90  = Oro90.data(:, 1);
+Oro100 = importdata(filenameOro100, delimiterComma, headerlinesIn); waveOro100  = Oro100.data(:, 1);
